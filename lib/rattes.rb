@@ -1,5 +1,5 @@
 require "rattes/version"
 
 module Rattes
-  # Your code goes here...
+  autoload :Parser, 'rattes/parser'
 end
