@@ -7,27 +7,39 @@ module Rattes
       def parse(xml_file)
         doc = Nokogiri::XML(xml_file)
         curriculum = doc.children.first
-        result = {}
-        iterate_children(curriculum) do |name, attributes|
-          result[name] = this_element = {}
-          attributes.each do |attr_name, attr_value|
-            key = attr_name.gsub('-', '_').downcase
-            this_element[key] = attr_value
-          end
-        end
+        result = parse_children(curriculum)
         result.extend(Methodize)
         result
       end
 
       private
 
-      def iterate_children(container)
+      def parse_children(source, origin = {})
+        iterate_children(source, origin) do |element|
+          this_element = origin
+          element.each do |attr_name, attr_value|
+            key = normalize(attr_name)
+            this_element[key] = attr_value
+          end
+          parse_children(element, this_element)
+          this_element
+        end
+      end
+
+
+      def iterate_children(container, origin)
+        result = origin
         container.children.
           select {|c| c.is_a? Nokogiri::XML::Element }.
           each do |element|
-            key = element.name.gsub('-', '_').downcase
-            yield key, element
+            key = normalize(element.name)
+            result[key] = yield element, element.children
           end
+        result
+      end
+
+      def normalize(name)
+        name.gsub('-', '_').downcase
       end
     end
   end
