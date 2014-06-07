@@ -22,13 +22,17 @@ module Rattes
           name = normalize(element.name)
           element_hash = result[name] = {}
           collect_attributes(element, element_hash)
-          element.elements.select(&nokogiri_element?).each do |sub_element|
-            name = normalize(sub_element.name)
-            sub_element_hash = element_hash[name] = {}
-            parse_children(sub_element, sub_element_hash)
-          end
+          collect_sub_elements(element, element_hash)
         end
         result
+      end
+
+      def collect_sub_elements(source, origin)
+        source.elements.select(&nokogiri_element?).each do |sub_element|
+          name = normalize(sub_element.name)
+          sub_element_hash = origin[name] = {}
+          parse_children(sub_element, sub_element_hash)
+        end
       end
 
       def collect_attributes(source, origin)
