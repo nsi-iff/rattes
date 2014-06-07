@@ -15,19 +15,13 @@ module Rattes
       private
 
       def parse_children(source, origin = {})
-        source.each do |(attr_name, attr_value)|
-          attr_name = normalize(attr_name)
-          origin[attr_name] = attr_value
-        end
+        collect_attributes(source, origin)
         elements = source.elements.select(&nokogiri_element?)
         result = origin
         elements.each do |element|
           name = normalize(element.name)
           element_hash = result[name] = {}
-          element.each do |(attr_name, attr_value)|
-            attr_name = normalize(attr_name)
-            element_hash[attr_name] = attr_value
-          end
+          collect_attributes(element, element_hash)
           element.elements.select(&nokogiri_element?).each do |sub_element|
             name = normalize(sub_element.name)
             sub_element_hash = element_hash[name] = {}
@@ -35,6 +29,13 @@ module Rattes
           end
         end
         result
+      end
+
+      def collect_attributes(source, origin)
+        source.each do |(attr_name, attr_value)|
+          attr_name = normalize(attr_name)
+          origin[attr_name] = attr_value
+        end
       end
 
       def nokogiri_element?
