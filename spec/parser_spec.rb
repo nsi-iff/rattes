@@ -21,7 +21,7 @@ describe Rattes::Parser do
       expect(dados_gerais.orgao_emissor).to eql "IFP"
       expect(dados_gerais.uf_orgao_emissor).to eql "RJ"
       expect(dados_gerais.data_de_emissao).to eql "05061991"
-      expect(dados_gerais.numero_de_passaporte).to eql nil
+      expect(dados_gerais.numero_do_passaporte).to eql ''
       expect(dados_gerais.nome_do_pai).to eql "Linus Torvalds Senior"
       expect(dados_gerais.nome_da_mae).to eql "Lina Torvalds"
       expect(dados_gerais.permissao_de_divulgacao).to eql "NAO"
