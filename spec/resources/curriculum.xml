@@ -30,5 +30,43 @@
       TEXTO-RESUMO-CV-RH="possui diversos cursos mundo afora."
       TEXTO-RESUMO-CV-RH-EN="a lot of unuseful courses"/>
     <OUTRAS-INFORMACOES-RELEVANTES OUTRAS-INFORMACOES-RELEVANTES="alguma coisa"/>
+    <FORMACAO-ACADEMICA-TITULACAO>
+      <ESPECIALIZACAO
+        SEQUENCIA-FORMACAO="4"
+        NIVEL="2"
+        TITULO-DA-MONOGRAFIA="Um Framework para Resolver um Problema que Acabei de Criar"
+        NOME-DO-ORIENTADOR="Johnny Rotten"
+        CODIGO-INSTITUICAO="123412341234"
+        NOME-INSTITUICAO="Instituto José das Couves"
+        CODIGO-CURSO="12341234"
+        NOME-CURSO="Desenvolvimento de Software Orientado a Objetos"
+        STATUS-DO-CURSO="CONCLUIDO"
+        ANO-DE-INICIO="2005"
+        ANO-DE-CONCLUSAO="2006"
+        FLAG-BOLSA="SIM"
+        CODIGO-AGENCIA-FINANCIADORA="09876543"
+        NOME-AGENCIA="FAPERJ"
+        CARGA-HORARIA="360"
+        TITULO-DA-MONOGRAFIA-INGLES="An Awesome Unuseful Framework"
+        NOME-CURSO-INGLES="Object-Oriented Software Development"/>
+      <ESPECIALIZACAO
+        SEQUENCIA-FORMACAO="5"
+        NIVEL="2"
+        TITULO-DA-MONOGRAFIA="Um Sistema Bacana"
+        NOME-DO-ORIENTADOR="Sistemeiro"
+        CODIGO-INSTITUICAO="123443211234"
+        NOME-INSTITUICAO="Escola Superior José das Couves"
+        CODIGO-CURSO="9876543"
+        NOME-CURSO="Engenharia de Programas"
+        STATUS-DO-CURSO="CONCLUIDO"
+        ANO-DE-INICIO="2010"
+        ANO-DE-CONCLUSAO="2010"
+        FLAG-BOLSA="NAO"
+        CODIGO-AGENCIA-FINANCIADORA=""
+        NOME-AGENCIA=""
+        CARGA-HORARIA="480"
+        TITULO-DA-MONOGRAFIA-INGLES="A Cool System"
+        NOME-CURSO-INGLES="Program Engineering"/>
+    </FORMACAO-ACADEMICA-TITULACAO>
   </DADOS-GERAIS>
 </CURRICULO-VITAE>
