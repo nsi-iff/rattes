@@ -34,12 +34,12 @@ describe Rattes::Parser do
     it 'extracts summary' do
       resumo_cv = dados_gerais.resumo_cv
       expect(resumo_cv.texto_resumo_cv_rh).to eql 'possui diversos cursos mundo afora.'
-      expect(resumo_cv.texto_resumo_cv_rh_en).to eql ''
+      expect(resumo_cv.texto_resumo_cv_rh_en).to eql 'a lot of unuseful courses'
     end
 
     it 'extracts other relevant information' do
       outras = dados_gerais.outras_informacoes_relevantes
-      expect(outras.outras_informacoes_relevantes).to eql ''
+      expect(outras.outras_informacoes_relevantes).to eql 'alguma coisa'
     end
   end
 end
