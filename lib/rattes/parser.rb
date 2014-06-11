@@ -5,7 +5,7 @@ module Rattes
   class Parser
     class << self
       def parse(xml_file)
-        doc = Nokogiri::XML(xml_file, nil, 'UTF-8')
+        doc = Nokogiri::XML(xml_file, nil, 'ISO-8859-1')
         curriculum = doc.children.first
         result = parse_element(curriculum)
         result.extend(Methodize)

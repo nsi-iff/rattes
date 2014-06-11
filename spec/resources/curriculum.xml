@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
 <CURRICULO-VITAE
   SISTEMA-ORIGEM-XML="LATTES_OFFLINE"
   DATA-ATUALIZACAO="24032014"
@@ -37,7 +37,7 @@
         TITULO-DA-MONOGRAFIA="Um Framework para Resolver um Problema que Acabei de Criar"
         NOME-DO-ORIENTADOR="Johnny Rotten"
         CODIGO-INSTITUICAO="123412341234"
-        NOME-INSTITUICAO="Instituto JosÃ© das Couves"
+        NOME-INSTITUICAO="Instituto José das Couves"
         CODIGO-CURSO="12341234"
         NOME-CURSO="Desenvolvimento de Software Orientado a Objetos"
         STATUS-DO-CURSO="CONCLUIDO"
@@ -55,7 +55,7 @@
         TITULO-DA-MONOGRAFIA="Um Sistema Bacana"
         NOME-DO-ORIENTADOR="Sistemeiro"
         CODIGO-INSTITUICAO="123443211234"
-        NOME-INSTITUICAO="Escola Superior JosÃ© das Couves"
+        NOME-INSTITUICAO="Escola Superior José das Couves"
         CODIGO-CURSO="9876543"
         NOME-CURSO="Engenharia de Programas"
         STATUS-DO-CURSO="CONCLUIDO"
@@ -73,7 +73,7 @@
         TITULO-DA-MONOGRAFIA="Outra coisa qualquer"
         NOME-DO-ORIENTADOR="Sistemeiro"
         CODIGO-INSTITUICAO="123443211234"
-        NOME-INSTITUICAO="Escola Superior JosÃ© das Couves"
+        NOME-INSTITUICAO="Escola Superior José das Couves"
         CODIGO-CURSO="9876543"
         NOME-CURSO="Engenharia de Programas"
         STATUS-DO-CURSO="CONCLUIDO"
@@ -134,13 +134,13 @@
       <AREAS-DO-CONHECIMENTO>
         <AREA-DO-CONHECIMENTO-1
           NOME-GRANDE-AREA-DO-CONHECIMENTO="CIENCIAS_EXATAS_E_DA_TERRA"
-          NOME-DA-AREA-DO-CONHECIMENTO="CiÃªncia da ComputaÃ§Ã£o"
+          NOME-DA-AREA-DO-CONHECIMENTO="Ciência da Computação"
           NOME-DA-SUB-AREA-DO-CONHECIMENTO=""
           NOME-DA-ESPECIALIDADE=""/>
         <AREA-DO-CONHECIMENTO-2
           NOME-GRANDE-AREA-DO-CONHECIMENTO="CIENCIAS_EXATAS_E_DA_TERRA"
-          NOME-DA-AREA-DO-CONHECIMENTO="CiÃªncia da ComputaÃ§Ã£o"
-          NOME-DA-SUB-AREA-DO-CONHECIMENTO="Metodologia e TÃ©cnicas da ComputaÃ§Ã£o"
+          NOME-DA-AREA-DO-CONHECIMENTO="Ciência da Computação"
+          NOME-DA-SUB-AREA-DO-CONHECIMENTO="Metodologia e Técnicas da Computação"
           NOME-DA-ESPECIALIDADE="Banco de Dados"/>
       </AREAS-DO-CONHECIMENTO>
       <INFORMACOES-ADICIONAIS
@@ -169,7 +169,7 @@
         INSTITUICAO-FINANCIADORA=""
         FINALIDADE-INGLES=""/>
       <AUTORES
-        NOME-COMPLETO-DO-AUTOR="Jece ValadÃ£o"
+        NOME-COMPLETO-DO-AUTOR="Jece Valadão"
         NOME-PARA-CITACAO="VALADAO, J."
         ORDEM-DE-AUTORIA="2"
         NRO-ID-CNPQ=""/>
@@ -180,13 +180,13 @@
         NRO-ID-CNPQ=""/>
       <PALAVRAS-CHAVE
         PALAVRA-CHAVE-1="Java"
-        PALAVRA-CHAVE-2="AplicaÃ§Ãµes desktop"
+        PALAVRA-CHAVE-2="Aplicações desktop"
         PALAVRA-CHAVE-3="Framework MVC"
         PALAVRA-CHAVE-4="J2EE"
         PALAVRA-CHAVE-5=""
         PALAVRA-CHAVE-6=""/>
       <AREAS-DO-CONHECIMENTO>
-        <AREA-DO-CONHECIMENTO-1 NOME-GRANDE-AREA-DO-CONHECIMENTO="CIENCIAS_EXATAS_E_DA_TERRA" NOME-DA-AREA-DO-CONHECIMENTO="CiÃªncia da ComputaÃ§Ã£o" NOME-DA-SUB-AREA-DO-CONHECIMENTO="Sistemas de ComputaÃ§Ã£o" NOME-DA-ESPECIALIDADE="Arquitetura de Sistemas de ComputaÃ§Ã£o"/>
+        <AREA-DO-CONHECIMENTO-1 NOME-GRANDE-AREA-DO-CONHECIMENTO="CIENCIAS_EXATAS_E_DA_TERRA" NOME-DA-AREA-DO-CONHECIMENTO="Ciência da Computação" NOME-DA-SUB-AREA-DO-CONHECIMENTO="Sistemas de Computação" NOME-DA-ESPECIALIDADE="Arquitetura de Sistemas de Computação"/>
       </AREAS-DO-CONHECIMENTO>
       <SETORES-DE-ATIVIDADE
         SETOR-DE-ATIVIDADE-1="Desenvolvimento de Programas (Software)"
