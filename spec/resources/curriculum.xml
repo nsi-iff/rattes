@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <CURRICULO-VITAE
   SISTEMA-ORIGEM-XML="LATTES_OFFLINE"
   DATA-ATUALIZACAO="24032014"
@@ -67,6 +67,134 @@
         CARGA-HORARIA="480"
         TITULO-DA-MONOGRAFIA-INGLES="A Cool System"
         NOME-CURSO-INGLES="Program Engineering"/>
+      <ESPECIALIZACAO
+        SEQUENCIA-FORMACAO="6"
+        NIVEL="2"
+        TITULO-DA-MONOGRAFIA="Outra coisa qualquer"
+        NOME-DO-ORIENTADOR="Sistemeiro"
+        CODIGO-INSTITUICAO="123443211234"
+        NOME-INSTITUICAO="Escola Superior José das Couves"
+        CODIGO-CURSO="9876543"
+        NOME-CURSO="Engenharia de Programas"
+        STATUS-DO-CURSO="CONCLUIDO"
+        ANO-DE-INICIO="2010"
+        ANO-DE-CONCLUSAO="2010"
+        FLAG-BOLSA="NAO"
+        CODIGO-AGENCIA-FINANCIADORA=""
+        NOME-AGENCIA=""
+        CARGA-HORARIA="480"
+        TITULO-DA-MONOGRAFIA-INGLES="A Cool System"
+        NOME-CURSO-INGLES="Program Engineering"/>
     </FORMACAO-ACADEMICA-TITULACAO>
   </DADOS-GERAIS>
+  <PRODUCAO-TECNICA>
+    <SOFTWARE SEQUENCIA-PRODUCAO="2">
+      <DADOS-BASICOS-DO-SOFTWARE
+        NATUREZA="COMPUTACIONAL"
+        TITULO-DO-SOFTWARE="Postgrow"
+        ANO="2005"
+        PAIS="Brasil"
+        IDIOMA=""
+        MEIO-DE-DIVULGACAO="NAO_INFORMADO"
+        HOME-PAGE-DO-TRABALHO="http://quintodosinferno.org"
+        FLAG-RELEVANCIA="SIM"
+        DOI=""
+        TITULO-DO-SOFTWARE-INGLES=""
+        FLAG-DIVULGACAO-CIENTIFICA="NAO"
+        FLAG-POTENCIAL-INOVACAO="NAO"/>
+      <DETALHAMENTO-DO-SOFTWARE
+        FINALIDADE="Awesome tool"
+        PLATAFORMA="Java, Multiplataforma"
+        AMBIENTE="Multiplataforma"
+        DISPONIBILIDADE="IRRESTRITA"
+        INSTITUICAO-FINANCIADORA=""
+        FINALIDADE-INGLES=""/>
+      <AUTORES
+        NOME-COMPLETO-DO-AUTOR="Topo Giggio"
+        NOME-PARA-CITACAO="GIGGIO, T."
+        ORDEM-DE-AUTORIA="2"
+        NRO-ID-CNPQ=""/>
+      <AUTORES
+        NOME-COMPLETO-DO-AUTOR="Jaspion Honda"
+        NOME-PARA-CITACAO="HONDA, J."
+        ORDEM-DE-AUTORIA="3"
+        NRO-ID-CNPQ=""/>
+      <AUTORES
+        NOME-COMPLETO-DO-AUTOR="Zezin La da Rua"
+        NOME-PARA-CITACAO="LA DA RUA, Z."
+        ORDEM-DE-AUTORIA="1"
+        NRO-ID-CNPQ="1234567890123456"/>
+      <PALAVRAS-CHAVE
+        PALAVRA-CHAVE-1="Software Factory"
+        PALAVRA-CHAVE-2="Extreme Modeling"
+        PALAVRA-CHAVE-3="Bureaucratic Process"
+        PALAVRA-CHAVE-4="Taylorist Development"
+        PALAVRA-CHAVE-5=""
+        PALAVRA-CHAVE-6=""/>
+      <AREAS-DO-CONHECIMENTO>
+        <AREA-DO-CONHECIMENTO-1
+          NOME-GRANDE-AREA-DO-CONHECIMENTO="CIENCIAS_EXATAS_E_DA_TERRA"
+          NOME-DA-AREA-DO-CONHECIMENTO="Ciência da Computação"
+          NOME-DA-SUB-AREA-DO-CONHECIMENTO=""
+          NOME-DA-ESPECIALIDADE=""/>
+        <AREA-DO-CONHECIMENTO-2
+          NOME-GRANDE-AREA-DO-CONHECIMENTO="CIENCIAS_EXATAS_E_DA_TERRA"
+          NOME-DA-AREA-DO-CONHECIMENTO="Ciência da Computação"
+          NOME-DA-SUB-AREA-DO-CONHECIMENTO="Metodologia e Técnicas da Computação"
+          NOME-DA-ESPECIALIDADE="Banco de Dados"/>
+      </AREAS-DO-CONHECIMENTO>
+      <INFORMACOES-ADICIONAIS
+        DESCRICAO-INFORMACOES-ADICIONAIS="Ferramenta para OLAP Espacial."
+        DESCRICAO-INFORMACOES-ADICIONAIS-INGLES=""/>
+    </SOFTWARE>
+    <SOFTWARE SEQUENCIA-PRODUCAO="3">
+      <DADOS-BASICOS-DO-SOFTWARE
+        NATUREZA="COMPUTACIONAL"
+        TITULO-DO-SOFTWARE="Sartapreuta"
+        ANO="2010"
+        PAIS="Brasil"
+        IDIOMA=""
+        MEIO-DE-DIVULGACAO="NAO_INFORMADO"
+        HOME-PAGE-DO-TRABALHO=""
+        FLAG-RELEVANCIA="NAO"
+        DOI=""
+        TITULO-DO-SOFTWARE-INGLES=""
+        FLAG-DIVULGACAO-CIENTIFICA="NAO"
+        FLAG-POTENCIAL-INOVACAO="NAO"/>
+      <DETALHAMENTO-DO-SOFTWARE
+        FINALIDADE=""
+        PLATAFORMA="Multiplataforma"
+        AMBIENTE="Java"
+        DISPONIBILIDADE="RESTRITA"
+        INSTITUICAO-FINANCIADORA=""
+        FINALIDADE-INGLES=""/>
+      <AUTORES
+        NOME-COMPLETO-DO-AUTOR="Jece Valadão"
+        NOME-PARA-CITACAO="VALADAO, J."
+        ORDEM-DE-AUTORIA="2"
+        NRO-ID-CNPQ=""/>
+      <AUTORES
+        NOME-COMPLETO-DO-AUTOR="Sergio Mallandro"
+        NOME-PARA-CITACAO="MALLANDRO, S."
+        ORDEM-DE-AUTORIA="1"
+        NRO-ID-CNPQ=""/>
+      <PALAVRAS-CHAVE
+        PALAVRA-CHAVE-1="Java"
+        PALAVRA-CHAVE-2="Aplicações desktop"
+        PALAVRA-CHAVE-3="Framework MVC"
+        PALAVRA-CHAVE-4="J2EE"
+        PALAVRA-CHAVE-5=""
+        PALAVRA-CHAVE-6=""/>
+      <AREAS-DO-CONHECIMENTO>
+        <AREA-DO-CONHECIMENTO-1 NOME-GRANDE-AREA-DO-CONHECIMENTO="CIENCIAS_EXATAS_E_DA_TERRA" NOME-DA-AREA-DO-CONHECIMENTO="Ciência da Computação" NOME-DA-SUB-AREA-DO-CONHECIMENTO="Sistemas de Computação" NOME-DA-ESPECIALIDADE="Arquitetura de Sistemas de Computação"/>
+      </AREAS-DO-CONHECIMENTO>
+      <SETORES-DE-ATIVIDADE
+        SETOR-DE-ATIVIDADE-1="Desenvolvimento de Programas (Software)"
+        SETOR-DE-ATIVIDADE-2=""
+        SETOR-DE-ATIVIDADE-3=""/>
+      <INFORMACOES-ADICIONAIS
+        DESCRICAO-INFORMACOES-ADICIONAIS=""
+        DESCRICAO-INFORMACOES-ADICIONAIS-INGLES=""/>
+    </SOFTWARE>
+  </PRODUCAO-TECNICA>
 </CURRICULO-VITAE>

@@ -1,5 +1,4 @@
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'rattes'))
-require 'rspec/collection_matchers'
 require 'pry-rails'
 
 Dir[File.join(File.dirname(__FILE__), 'support', '**', '*.rb')].each do |f|
