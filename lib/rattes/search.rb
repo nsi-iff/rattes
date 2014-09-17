@@ -1,7 +1,7 @@
 require 'yaml'
 
 module Rattes
-  class Curriculum
+  class Search
     def initialize(driver)
       @driver = driver
     end
