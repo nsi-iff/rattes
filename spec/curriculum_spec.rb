@@ -3,6 +3,10 @@ require 'spec_helper'
 describe Rattes::Curriculum do
   let(:curriculum) { Rattes::Curriculum.new(curriculum_xml) }
 
+  it 'gets curriculum data' do
+    expect(curriculum.name).to eq 'Linus Torvalds'
+  end
+
   it "gets projects" do
     expect(curriculum.projects.count).to eq 2
     proj1, proj2 = curriculum.projects.sort_by(&:name)
