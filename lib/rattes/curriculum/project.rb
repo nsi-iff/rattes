@@ -3,7 +3,8 @@ module Rattes
     class Project
       include Utils
 
-      def initialize(doc)
+      def initialize(curriculum, doc)
+        @curriculum = curriculum
         @doc = doc
         parse!
       end
@@ -13,6 +14,12 @@ module Rattes
 
       def innovation?
         @innovation
+      end
+
+      def researcher_is_responsible?
+        responsible = @doc.xpath(
+          ".//INTEGRANTES-DO-PROJETO[@FLAG-RESPONSAVEL='SIM']").first
+        responsible['NOME-COMPLETO'] == @curriculum.name
       end
 
       private

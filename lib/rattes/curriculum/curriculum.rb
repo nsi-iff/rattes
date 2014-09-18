@@ -9,7 +9,11 @@ module Rattes
       attr_reader :name
 
       def projects
-        @doc.xpath('//PROJETO-DE-PESQUISA').map {|e| Project.new(e) }
+        @doc.xpath('//PROJETO-DE-PESQUISA').map {|e| Project.new(self, e) }
+      end
+
+      def responsible_projects
+        projects.select(&:researcher_is_responsible?)
       end
 
       private

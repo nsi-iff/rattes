@@ -35,4 +35,18 @@ describe Rattes::Curriculum do
     expect(proj2fin2.institute).to eq 'IFF'
     expect(proj2fin2.nature).to eq 'Auxílio financeiro'
   end
+
+  it 'researcher is responsible to project?' do
+    proj1, proj2 = curriculum.projects.sort_by(&:name)
+    expect(proj1.name).to eq 'Sistemas de Suporte à Decisao'
+    expect(proj1.researcher_is_responsible?).to be_falsy
+    expect(proj2.name).to eq 'Tratamento da Informação Não Estruturada'
+    expect(proj2.researcher_is_responsible?).to be_truthy
+  end
+
+  it "gets projects under responsability of the researcher" do
+    expect(curriculum.responsible_projects.count).to eq 1
+    proj = curriculum.responsible_projects.first
+    expect(proj.name).to eq 'Tratamento da Informação Não Estruturada'
+  end
 end
