@@ -16,7 +16,9 @@ describe Rattes::Curriculum do
     expect(proj1.description).to eq 'Projeto de pequeno porte...'
     expect(proj1.start_year).to eq 1999
     expect(proj1.department).to eq 'Coordenação de Informática/Desenvolvimento'
+    expect(proj1.situation).to eq 'Em andamento'
     expect(proj1).to_not be_innovation
+    expect(proj1).to be_in_progress
     expect(proj1.sponsors.count).to eq 1
     proj1fin1 = proj1.sponsors.first
     expect(proj1fin1.institute).to eq 'UNICEF'
@@ -27,7 +29,9 @@ describe Rattes::Curriculum do
     expect(proj2.description).to eq 'Projeto de pesquisa e desenvolvimento...'
     expect(proj2.start_year).to eq 2002
     expect(proj2.department).to eq 'Núcleo de Pesquisa em Sistemas de Informação'
+    expect(proj2.situation).to eq 'Concluído'
     expect(proj2).to be_innovation
+    expect(proj2).to_not be_in_progress
     expect(proj2.sponsors.count).to eq 2
     proj2fin1, proj2fin2 = proj2.sponsors.sort_by(&:institute)
     expect(proj2fin1.institute).to eq 'CNPq'
@@ -44,9 +48,15 @@ describe Rattes::Curriculum do
     expect(proj2.researcher_is_responsible?).to be_truthy
   end
 
-  it "gets projects under responsability of the researcher" do
-    expect(curriculum.responsible_projects.count).to eq 1
-    proj = curriculum.responsible_projects.first
-    expect(proj.name).to eq 'Tratamento da Informação Não Estruturada'
+  describe 'gets projects under responsability of the researcher' do
+    it "all" do
+      expect(curriculum.responsible_projects.count).to eq 1
+      proj = curriculum.responsible_projects.first
+      expect(proj.name).to eq 'Tratamento da Informação Não Estruturada'
+    end
+
+    it 'in progress only' do
+
+    end
   end
 end

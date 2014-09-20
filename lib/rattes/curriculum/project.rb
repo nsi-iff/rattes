@@ -10,7 +10,7 @@ module Rattes
       end
 
       attr_reader :name, :nature, :description, :start_year, :department,
-        :sponsors
+        :situation, :sponsors
 
       def innovation?
         @innovation
@@ -22,7 +22,13 @@ module Rattes
         responsible['NOME-COMPLETO'] == @curriculum.name
       end
 
+      def in_progress?
+        situation == situation_constants(EM_ANDAMENTO)
+      end
+
       private
+
+      EM_ANDAMENTO = 'EM_ANDAMENTO'
 
       def parse!
         parent = @doc.parent
@@ -32,6 +38,7 @@ module Rattes
         @start_year = integerize(parent['ANO-INICIO'])
         @department = parse_department(parent)
         @innovation = booleanize(@doc['FLAG-POTENCIAL-INOVACAO'])
+        @situation = situation_constants(@doc['SITUACAO'])
         @sponsors = get_sponsors(parent)
       end
 
@@ -43,6 +50,15 @@ module Rattes
           'OUTRA' => 'Outra'
         }
         @nature_constants[key]
+      end
+
+      def situation_constants(key)
+        @situation_constants ||= {
+          EM_ANDAMENTO => 'Em andamento',
+          'DESATIVADO' => 'Desativado',
+          'CONCLUIDO' => 'Concluído'
+        }
+        @situation_constants[key]
       end
 
       def parse_department(d)
