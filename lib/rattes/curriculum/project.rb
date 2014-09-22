@@ -9,8 +9,8 @@ module Rattes
         parse!
       end
 
-      attr_reader :name, :nature, :description, :start_year, :department,
-        :situation, :sponsors
+      attr_reader :name, :nature, :description, :start_year, :institute,
+        :department, :situation, :sponsors
 
       def innovation?
         @innovation
@@ -36,6 +36,7 @@ module Rattes
         @nature = nature_constants(@doc['NATUREZA'])
         @description = @doc['DESCRICAO-DO-PROJETO']
         @start_year = integerize(parent['ANO-INICIO'])
+        @institute = parent.parent.parent['NOME-INSTITUICAO']
         @department = parse_department(parent)
         @innovation = booleanize(@doc['FLAG-POTENCIAL-INOVACAO'])
         @situation = situation_constants(@doc['SITUACAO'])
