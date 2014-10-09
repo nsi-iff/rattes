@@ -24,6 +24,11 @@ describe Rattes::Curriculum do
     proj1fin1 = proj1.sponsors.first
     expect(proj1fin1.institute).to eq 'UNICEF'
     expect(proj1fin1.nature).to eq 'Cooperação'
+    expect(proj1.members.count).to eq 2
+    proj1member1, proj1member2 = proj1.members.sort_by(&:name)
+    expect(proj1member1.name).to eq 'José da Silva'
+    expect(proj1member2.name).to eq 'Linus Torvalds'
+
 
     expect(proj2.name).to eq 'Tratamento da Informação Não Estruturada'
     expect(proj2.nature).to eq 'Pesquisa'
@@ -40,6 +45,10 @@ describe Rattes::Curriculum do
     expect(proj2fin1.nature).to eq 'Bolsa'
     expect(proj2fin2.institute).to eq 'IFF'
     expect(proj2fin2.nature).to eq 'Auxílio financeiro'
+    expect(proj2.members.count).to eq 2
+    proj2member1, proj2member2 = proj2.members.sort_by(&:name)
+    expect(proj2member1.name).to eq 'José da Silva'
+    expect(proj2member2.name).to eq 'Linus Torvalds'
   end
 
   it 'researcher is responsible to project?' do
