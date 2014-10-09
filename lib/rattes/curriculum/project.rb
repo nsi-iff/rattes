@@ -10,7 +10,7 @@ module Rattes
       end
 
       attr_reader :name, :nature, :description, :start_year, :institute,
-        :department, :situation, :sponsors
+        :department, :situation, :sponsors, :members
 
       def innovation?
         @innovation
@@ -41,6 +41,7 @@ module Rattes
         @innovation = booleanize(@doc['FLAG-POTENCIAL-INOVACAO'])
         @situation = situation_constants(@doc['SITUACAO'])
         @sponsors = get_sponsors(parent)
+        @members = get_members(parent)
       end
 
       def nature_constants(key)
@@ -72,6 +73,10 @@ module Rattes
 
       def get_sponsors(doc)
         doc.xpath('.//FINANCIADOR-DO-PROJETO').map {|e| Sponsor.new(e) }
+      end
+    
+      def get_members(doc)
+        doc.xpath('.//INTEGRANTES-DO-PROJETO').map {|e| Member.new(e) }
       end
     end
   end
