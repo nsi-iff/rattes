@@ -40,8 +40,8 @@ module Rattes
         @department = parse_department(parent)
         @innovation = booleanize(@doc['FLAG-POTENCIAL-INOVACAO'])
         @situation = situation_constants(@doc['SITUACAO'])
-        @sponsors = get_sponsors(parent)
-        @members = get_members(parent)
+        @sponsors = get_sponsors(@doc)
+        @members = get_members(@doc)
       end
 
       def nature_constants(key)
@@ -74,7 +74,7 @@ module Rattes
       def get_sponsors(doc)
         doc.xpath('.//FINANCIADOR-DO-PROJETO').map {|e| Sponsor.new(e) }
       end
-    
+
       def get_members(doc)
         doc.xpath('.//INTEGRANTES-DO-PROJETO').map {|e| Member.new(e) }
       end
